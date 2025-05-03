@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ingredient Blend</title>
+    <link rel="icon" type="image" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/components/header.css" />
+    <link rel="stylesheet" href="./styles/components/landing.css" />
+    <link rel="stylesheet" href="./styles/components/recipes.css" />
+    <link rel="stylesheet" href="./styles/components/recipeContent.css" />
+    <link rel="stylesheet" href="./styles/util.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <a class="header__logo"><img src="./assets/logo.webp" height="60" /></a>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="">
+            <a class="header__link">Ingredient Blend</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Landing Page -->
+      <section class="landing container">
+        <h2 class="landing__title">Cooking made it easy at home</h2>
+        <div class="landing__label">
+          <label>By Ingredients</label>
+        </div>
+        <div class="landing__function-container">
+          <input
+            type="text"
+            id="ingredients"
+            placeholder="Pork, soy sauce, garlic"
+            pattern="[a-zA-Z,\s]+"
+            title="Only letters, commas, and spaces are allowed"
+            required
+          />
+          <button class="btn landing__genBtn" id="recipeBtn" disabled>
+            Generate
+          </button>
+        </div>
+      </section>
+
+      <!-- List of recipes -->
+      <section class="recipes container">
+        <h4 class="recipes__title">Recipes</h4>
+        <div class="h_line"></div>
+        <div class="recipes__container-card" id="recipeCard"></div>
+      </section>
+
+      <!-- Recipe Modal -->
+      <dialog id="recipeModal" class="recipeModal container">
+        <button class="btn recipeModal__closeBtn">Close</button>
+        <button class="btn recipeModal__deleteBtn">Delete</button>
+
+        <div class="recipe__container">
+          <div class="container__image-nutrition">
+            <!-- Recipe Image -->
+            <img class="recipe__img" id="image" src="" alt="recipe picture" />
+
+            <!-- Nutrition -->
+            <div class="recipe__nutrition-container">
+              <h4 class="recipe__title" id="recipeNutritionTitle"></h4>
+              <div>
+                <ul class="recipe__nutrition-list" id="recipeNutrition"></ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="container__title-ingredients-instructions">
+            <div class="recipe__title-container">
+              <h3 class="recipe__main-title" id="recipeTitle"></h3>
+              <div class="recipe__preparation-container">
+                <strong
+                  class="recipe__preparation-strong"
+                  id="recipeTitleTotal"
+                ></strong>
+                <p class="recipe__preparation-minutes" id="total"></p>
+              </div>
+            </div>
+
+            <!-- Ingredients -->
+            <div class="recipe__ingredient-container">
+              <h4 class="recipe__title" id="recipeIngredientTitle"></h4>
+              <div>
+                <ul class="recipe__ingredient-list" id="recipeIngredients"></ul>
+              </div>
+            </div>
+
+            <!-- Instructions -->
+            <div class="recipe__instruction-container">
+              <h4 class="recipe__title" id="recipeInstructionTitle"></h4>
+              <div>
+                <ul
+                  class="recipe__instruction-list"
+                  id="recipeInstruction"
+                ></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </dialog>
+      <script src="./scripts/app.js"></script>
+    </main>
+  </body>
+</html>
