@@ -1,0 +1,48 @@
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: var(--clr-red);
+  color: var(--clr-light);
+  padding: 0.5em 1em;
+  border-radius: 6px;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .contianer {
+    max-width: 475px;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .contianer {
+    max-width: 640px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .contianer {
+    max-width: 768px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .contianer {
+    max-width: 1024px;
+  }
+  .section {
+    margin-top: 10rem;
+  }
+}
