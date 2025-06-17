@@ -8,8 +8,7 @@ In addition to the cooking instructions, the application provides comprehensive 
 
 ## 📸 Demo
 
-[Live Demo](https://ingredient-blend.vercel.app/)  
-![App Screenshot](./screenshots/homepage.png)
+[Live Demo](https://ingredient-blend.vercel.app/)
 
 ---
 
