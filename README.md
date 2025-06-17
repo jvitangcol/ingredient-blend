@@ -44,3 +44,30 @@ src/
 │   └── main.css
 |   └── util.css
 ├── index.html
+```
+## 🚀 Getting Started
+Follow these steps to run this project locally:
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/yourusername/project-name.git
+cd project-name
+```
+
+### 2. Open in VS Code
+Make sure you have [Visual Studio Code](https://code.visualstudio.com/download) installed.
+
+3. Install Live Server Extension
+In VS Code:
+
+- Go to the Extensions tab (or press Ctrl + Shift + X)
+- Search for Live Server by Ritwick Dey
+- Click Install
+
+4. Run the App
+   
+- Open the index.html file.
+- Right-click anywhere on the page and select "Open with Live Server"
+  _(Or click the “Go Live” button at the bottom-right corner in VS Code)_
+
+
