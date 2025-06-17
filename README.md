@@ -45,6 +45,8 @@ src/
 |   └── util.css
 ├── index.html
 ```
+---
+
 ## 🚀 Getting Started
 Follow these steps to run this project locally:
 
